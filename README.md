@@ -24,12 +24,6 @@ double_tap_action:
 ```
 ---
 
-[![GitHub Release][releases-shield]][releases]
-[![License][license-shield]](LICENSE.md)
-
-![Project Maintenance][maintenance-shield]
-[![GitHub Activity][commits-shield]][commits]
-
 ## Installation
 
 - Download, unzip and copy the ocado folder in your 'config/custom_components' folder
@@ -78,10 +72,3 @@ To add a sensor use the following syntax;
 If you enjoy this integration please consider buying me a coffee!
 
 [![coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/charlie23)
-
-[commits-shield]: https://img.shields.io/github/commit-activity/y/CaptainKarma/ha-ocado.svg?style=for-the-badge
-[commits]: https://github.com/CaptainKarma/ha-ocado/commits/master
-[license-shield]: https://img.shields.io/github/license/CaptainKarma/ha-ocado.svg?style=for-the-badge
-[maintenance-shield]: https://img.shields.io/badge/maintainer-Charlie-blue.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/CaptainKarma/ha-ocado.svg?style=for-the-badge
-[releases]: https://github.com/CaptainKarma/ha-ocado/releases
