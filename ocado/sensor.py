@@ -148,8 +148,9 @@ def ocado(email, subject, email_date):
      # Clean up the Order Edit Date formatting so it displays nicer in the dashboard
      order_edit_date_obj = datetime.strptime(re.sub('(\d+)(st|nd|rd|th)', '\g<1>', order_edit_date), '%d %B %Y')
      order_edit_date_obj_string = order_edit_date_obj.strftime(f'%A %d %B')
-
+     my_year = order_edit_date_obj.year
      order_delivery_date_object = datetime.strptime(order_delivery_date, '%A %d %B')
+     order_delivery_date_object = order_delivery_date_object.replace(year=my_year)
      order_delivery_date_obj_string = order_delivery_date_object.strftime(f'%A %d %B')
 
      # Load delivery date, time and order edit date and time
