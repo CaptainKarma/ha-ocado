@@ -1,6 +1,6 @@
 {
     "domain": "ocado",
-    "name": "Email",
+    "name": "Ocado Integration",
     "documentation": "https://github.com/CaptainKarma/ha-ocado",
     "dependencies": [],
     "codeowners": [
