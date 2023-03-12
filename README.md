@@ -3,9 +3,8 @@
 An IMAP integration that scans the Email's sent by Ocado and pulls out the Order Edit and Order Delivery details as sensors that can be displayed in the HA dashboard.
 <br><br>Note:  There is no association with Ocado.  This integration took a lot of inspiration from ha-email-sensor so has a similar configuration
 <br><br><br>
-![image](https://user-images.githubusercontent.com/1750450/224155057-ded90b63-629e-4b7b-99f0-36980203c15e.png)
-
-Example mushroom-template-card
+![image](https://user-images.githubusercontent.com/1750450/224572585-04b8821a-c2b7-4d3e-b7f6-f5922690fd45.png)
+<br>Example mushroom-template-card
 
 ```yaml
 type: custom:mushroom-template-card
