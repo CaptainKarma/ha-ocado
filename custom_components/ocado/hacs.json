@@ -1,4 +1,8 @@
 {
-    "name": "Ocado Integration",
-    "content_in_root": true
+  "name": "Ocado Integration",
+  "content_in_root": false,
+  "domain": "ocado",
+  "iot_class": "cloud_polling",
+  "filename": "custom_components/ocado",
+  "render_readme": true
 }
