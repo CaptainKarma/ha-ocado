@@ -10,9 +10,9 @@ Example mushroom-template-card
 ```yaml
 type: custom:mushroom-template-card
 primary: Edit Order Until
-secondary: |
-  {{ states.sensor.ocado_tracking.attributes['Edit Until Date'] }}
-  {{ states.sensor.ocado_tracking.attributes['Edit Until Time'] }}
+secondary: >
+  {{ state_attr('sensor.ocado_tracking', 'edit_until_date') | default('N/A') }}
+  {{ state_attr('sensor.ocado_tracking', 'edit_until_time') | default('N/A') }}
 icon: mdi:note-edit
 multiline_secondary: true
 tap_action:
@@ -21,7 +21,8 @@ hold_action:
   action: none
 double_tap_action:
   action: none
-```
+fill_container: false
+icon_color: blue```
 ---
 
 ## Installation
