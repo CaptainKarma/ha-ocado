@@ -51,18 +51,19 @@ sensor:
 
 ## Exposed Sensors
 
-| Name                   | Description                                                                       |
-| -----------------------| --------------------------------------------------------------------------------- |
-| Email Received Date    | Email date and time that information was parsed from                              |
-| Delivery Date          | Delivery date for example;                     Saturday 10 March                  |
-| Delivery Time          | Delivery Time for example;                     8:30pm - 9:30pm                    |
-| Edit Until Date        | Date that Order can be edited until, example;  Thursday 09 March                  |
-| Edit Until Time        | Time that Order can be edited until, example;   23:30                             |
-| Edit Countdown Minutes | Countdown until Order editing closes, making it easier to build alert automations |
+| Name                       | Description                                                                       |
+| ---------------------------| --------------------------------------------------------------------------------- |
+| Email Received Date        | Email date and time that information was parsed from                              |
+| Delivery Date              | Delivery date for example;                     Saturday 10 March                  |
+| Delivery Time              | Delivery Time for example;                     8:30pm - 9:30pm                    |
+| Edit Until Date            | Date that Order can be edited until, example;  Thursday 09 March                  |
+| Edit Until Time            | Time that Order can be edited until, example;   23:30                             |
+| Edit Countdown Minutes     | Countdown until Order editing closes, making it easier to build alert automations |
+| Delivery Countdown Minutes | Countdown until Delivery window opens, making it easier to turn on lights etc     |
 
 ```yaml
 To add a sensor use the following syntax;
-{{ states.sensor.ocado_tracking.attributes['Edit Countdown Minutes'] }}
+{{ state_attr('sensor.ocado_tracking', 'edit_until_date') | default('N/A') }}
 ```
 ## Example of automation
 <br>Integration will poll the IMAP server every 10 minutes, so bear this in mind when making automations
